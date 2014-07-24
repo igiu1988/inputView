@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3DA432E197CE34100F55405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA432D197CE34100F55405 /* Foundation.framework */; };
+		D3DA4330197CE34100F55405 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA432F197CE34100F55405 /* CoreGraphics.framework */; };
+		D3DA4332197CE34100F55405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA4331197CE34100F55405 /* UIKit.framework */; };
+		D3DA4338197CE34100F55405 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4336197CE34100F55405 /* InfoPlist.strings */; };
+		D3DA433A197CE34100F55405 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA4339197CE34100F55405 /* main.m */; };
+		D3DA433E197CE34100F55405 /* WYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA433D197CE34100F55405 /* WYAppDelegate.m */; };
+		D3DA4341197CE34100F55405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DA433F197CE34100F55405 /* Main.storyboard */; };
+		D3DA4344197CE34100F55405 /* WYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA4343197CE34100F55405 /* WYViewController.m */; };
+		D3DA4346197CE34100F55405 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4345197CE34100F55405 /* Images.xcassets */; };
+		D3DA434D197CE34100F55405 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA434C197CE34100F55405 /* XCTest.framework */; };
+		D3DA434E197CE34100F55405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA432D197CE34100F55405 /* Foundation.framework */; };
+		D3DA434F197CE34100F55405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DA4331197CE34100F55405 /* UIKit.framework */; };
+		D3DA4357197CE34100F55405 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4355197CE34100F55405 /* InfoPlist.strings */; };
+		D3DA4359197CE34100F55405 /* InputViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA4358197CE34100F55405 /* InputViewTests.m */; };
+		D3DA4364197CE35100F55405 /* ZKCommentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA4363197CE35100F55405 /* ZKCommentInputView.m */; };
+		D3DA436E197CE37D00F55405 /* MessageEntryBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4366197CE37D00F55405 /* MessageEntryBackground.png */; };
+		D3DA436F197CE37D00F55405 /* MessageEntryBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4367197CE37D00F55405 /* MessageEntryBackground@2x.png */; };
+		D3DA4370197CE37D00F55405 /* MessageEntryInputField.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4368197CE37D00F55405 /* MessageEntryInputField.png */; };
+		D3DA4371197CE37D00F55405 /* MessageEntryInputField@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA4369197CE37D00F55405 /* MessageEntryInputField@2x.png */; };
+		D3DA4372197CE37D00F55405 /* MessageEntrySendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA436A197CE37D00F55405 /* MessageEntrySendButton.png */; };
+		D3DA4373197CE37D00F55405 /* MessageEntrySendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA436B197CE37D00F55405 /* MessageEntrySendButton@2x.png */; };
+		D3DA4374197CE37D00F55405 /* MessageEntrySendButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA436C197CE37D00F55405 /* MessageEntrySendButtonPressed.png */; };
+		D3DA4375197CE37D00F55405 /* MessageEntrySendButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DA436D197CE37D00F55405 /* MessageEntrySendButtonPressed@2x.png */; };
+		D3DA4378197CE3AF00F55405 /* UIViewController+KeyboardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA4377197CE3AF00F55405 /* UIViewController+KeyboardAnimation.m */; };
+		D3DA437D197CE46300F55405 /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA437A197CE46300F55405 /* HPGrowingTextView.m */; };
+		D3DA437E197CE46300F55405 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA437C197CE46300F55405 /* HPTextViewInternal.m */; };
+		D3DA4394197CE4D300F55405 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA4393197CE4D300F55405 /* UIView+Utils.m */; };
+		D3EF21BD197E1395001BB86F /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EF21B0197E1395001BB86F /* amrFileCodec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3EF21BE197E1395001BB86F /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EF21B9197E1395001BB86F /* libopencore-amrnb.a */; };
+		D3EF21BF197E1395001BB86F /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EF21BA197E1395001BB86F /* libopencore-amrwb.a */; };
+		D3EF21C0197E1395001BB86F /* WYRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EF21BC197E1395001BB86F /* WYRecorder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DA4350197CE34100F55405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3DA4322197CE34000F55405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3DA4329197CE34100F55405;
+			remoteInfo = InputView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3DA432A197CE34100F55405 /* InputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DA432D197CE34100F55405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3DA432F197CE34100F55405 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3DA4331197CE34100F55405 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3DA4335197CE34100F55405 /* InputView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InputView-Info.plist"; sourceTree = "<group>"; };
+		D3DA4337197CE34100F55405 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3DA4339197CE34100F55405 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3DA433B197CE34100F55405 /* InputView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InputView-Prefix.pch"; sourceTree = "<group>"; };
+		D3DA433C197CE34100F55405 /* WYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYAppDelegate.h; sourceTree = "<group>"; };
+		D3DA433D197CE34100F55405 /* WYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYAppDelegate.m; sourceTree = "<group>"; };
+		D3DA4340197CE34100F55405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3DA4342197CE34100F55405 /* WYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYViewController.h; sourceTree = "<group>"; };
+		D3DA4343197CE34100F55405 /* WYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYViewController.m; sourceTree = "<group>"; };
+		D3DA4345197CE34100F55405 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3DA434B197CE34100F55405 /* InputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DA434C197CE34100F55405 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3DA4354197CE34100F55405 /* InputViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InputViewTests-Info.plist"; sourceTree = "<group>"; };
+		D3DA4356197CE34100F55405 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3DA4358197CE34100F55405 /* InputViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewTests.m; sourceTree = "<group>"; };
+		D3DA4362197CE35100F55405 /* ZKCommentInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCommentInputView.h; sourceTree = "<group>"; };
+		D3DA4363197CE35100F55405 /* ZKCommentInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCommentInputView.m; sourceTree = "<group>"; };
+		D3DA4366197CE37D00F55405 /* MessageEntryBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntryBackground.png; sourceTree = "<group>"; };
+		D3DA4367197CE37D00F55405 /* MessageEntryBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntryBackground@2x.png"; sourceTree = "<group>"; };
+		D3DA4368197CE37D00F55405 /* MessageEntryInputField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntryInputField.png; sourceTree = "<group>"; };
+		D3DA4369197CE37D00F55405 /* MessageEntryInputField@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntryInputField@2x.png"; sourceTree = "<group>"; };
+		D3DA436A197CE37D00F55405 /* MessageEntrySendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntrySendButton.png; sourceTree = "<group>"; };
+		D3DA436B197CE37D00F55405 /* MessageEntrySendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButton@2x.png"; sourceTree = "<group>"; };
+		D3DA436C197CE37D00F55405 /* MessageEntrySendButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageEntrySendButtonPressed.png; sourceTree = "<group>"; };
+		D3DA436D197CE37D00F55405 /* MessageEntrySendButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageEntrySendButtonPressed@2x.png"; sourceTree = "<group>"; };
+		D3DA4376197CE3AF00F55405 /* UIViewController+KeyboardAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KeyboardAnimation.h"; sourceTree = "<group>"; };
+		D3DA4377197CE3AF00F55405 /* UIViewController+KeyboardAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KeyboardAnimation.m"; sourceTree = "<group>"; };
+		D3DA4379197CE46300F55405 /* HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPGrowingTextView.h; sourceTree = "<group>"; };
+		D3DA437A197CE46300F55405 /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPGrowingTextView.m; sourceTree = "<group>"; };
+		D3DA437B197CE46300F55405 /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTextViewInternal.h; sourceTree = "<group>"; };
+		D3DA437C197CE46300F55405 /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTextViewInternal.m; sourceTree = "<group>"; };
+		D3DA4392197CE4D300F55405 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		D3DA4393197CE4D300F55405 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		D3EF21AF197E1395001BB86F /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		D3EF21B0197E1395001BB86F /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
+		D3EF21B3197E1395001BB86F /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		D3EF21B4197E1395001BB86F /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		D3EF21B6197E1395001BB86F /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		D3EF21B7197E1395001BB86F /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		D3EF21B9197E1395001BB86F /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		D3EF21BA197E1395001BB86F /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		D3EF21BB197E1395001BB86F /* WYRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYRecorder.h; sourceTree = "<group>"; };
+		D3EF21BC197E1395001BB86F /* WYRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYRecorder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3DA4327197CE34100F55405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DA4330197CE34100F55405 /* CoreGraphics.framework in Frameworks */,
+				D3EF21BF197E1395001BB86F /* libopencore-amrwb.a in Frameworks */,
+				D3EF21BE197E1395001BB86F /* libopencore-amrnb.a in Frameworks */,
+				D3DA4332197CE34100F55405 /* UIKit.framework in Frameworks */,
+				D3DA432E197CE34100F55405 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DA4348197CE34100F55405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DA434D197CE34100F55405 /* XCTest.framework in Frameworks */,
+				D3DA434F197CE34100F55405 /* UIKit.framework in Frameworks */,
+				D3DA434E197CE34100F55405 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3DA4321197CE34000F55405 = {
+			isa = PBXGroup;
+			children = (
+				D3DA4333197CE34100F55405 /* InputView */,
+				D3DA4352197CE34100F55405 /* InputViewTests */,
+				D3DA432C197CE34100F55405 /* Frameworks */,
+				D3DA432B197CE34100F55405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3DA432B197CE34100F55405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA432A197CE34100F55405 /* InputView.app */,
+				D3DA434B197CE34100F55405 /* InputViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3DA432C197CE34100F55405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA432D197CE34100F55405 /* Foundation.framework */,
+				D3DA432F197CE34100F55405 /* CoreGraphics.framework */,
+				D3DA4331197CE34100F55405 /* UIKit.framework */,
+				D3DA434C197CE34100F55405 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3DA4333197CE34100F55405 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF21C1197E39EB001BB86F /* other */,
+				D3EF21AE197E1395001BB86F /* arm */,
+				D3DA4365197CE37D00F55405 /* testImage */,
+				D3DA433C197CE34100F55405 /* WYAppDelegate.h */,
+				D3DA433D197CE34100F55405 /* WYAppDelegate.m */,
+				D3DA433F197CE34100F55405 /* Main.storyboard */,
+				D3DA4342197CE34100F55405 /* WYViewController.h */,
+				D3DA4343197CE34100F55405 /* WYViewController.m */,
+				D3DA4362197CE35100F55405 /* ZKCommentInputView.h */,
+				D3DA4363197CE35100F55405 /* ZKCommentInputView.m */,
+				D3DA4376197CE3AF00F55405 /* UIViewController+KeyboardAnimation.h */,
+				D3DA4377197CE3AF00F55405 /* UIViewController+KeyboardAnimation.m */,
+				D3DA4345197CE34100F55405 /* Images.xcassets */,
+				D3DA4334197CE34100F55405 /* Supporting Files */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		D3DA4334197CE34100F55405 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA4335197CE34100F55405 /* InputView-Info.plist */,
+				D3DA4336197CE34100F55405 /* InfoPlist.strings */,
+				D3DA4339197CE34100F55405 /* main.m */,
+				D3DA433B197CE34100F55405 /* InputView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3DA4352197CE34100F55405 /* InputViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA4358197CE34100F55405 /* InputViewTests.m */,
+				D3DA4353197CE34100F55405 /* Supporting Files */,
+			);
+			path = InputViewTests;
+			sourceTree = "<group>";
+		};
+		D3DA4353197CE34100F55405 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA4354197CE34100F55405 /* InputViewTests-Info.plist */,
+				D3DA4355197CE34100F55405 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3DA4365197CE37D00F55405 /* testImage */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA4366197CE37D00F55405 /* MessageEntryBackground.png */,
+				D3DA4367197CE37D00F55405 /* MessageEntryBackground@2x.png */,
+				D3DA4368197CE37D00F55405 /* MessageEntryInputField.png */,
+				D3DA4369197CE37D00F55405 /* MessageEntryInputField@2x.png */,
+				D3DA436A197CE37D00F55405 /* MessageEntrySendButton.png */,
+				D3DA436B197CE37D00F55405 /* MessageEntrySendButton@2x.png */,
+				D3DA436C197CE37D00F55405 /* MessageEntrySendButtonPressed.png */,
+				D3DA436D197CE37D00F55405 /* MessageEntrySendButtonPressed@2x.png */,
+			);
+			path = testImage;
+			sourceTree = "<group>";
+		};
+		D3EF21AE197E1395001BB86F /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF21AF197E1395001BB86F /* amrFileCodec.h */,
+				D3EF21B0197E1395001BB86F /* amrFileCodec.m */,
+				D3EF21B1197E1395001BB86F /* include */,
+				D3EF21B8197E1395001BB86F /* lib */,
+				D3EF21BB197E1395001BB86F /* WYRecorder.h */,
+				D3EF21BC197E1395001BB86F /* WYRecorder.m */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		D3EF21B1197E1395001BB86F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF21B2197E1395001BB86F /* opencore-amrnb */,
+				D3EF21B5197E1395001BB86F /* opencore-amrwb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D3EF21B2197E1395001BB86F /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF21B3197E1395001BB86F /* interf_dec.h */,
+				D3EF21B4197E1395001BB86F /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		D3EF21B5197E1395001BB86F /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF21B6197E1395001BB86F /* dec_if.h */,
+				D3EF21B7197E1395001BB86F /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		D3EF21B8197E1395001BB86F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF21B9197E1395001BB86F /* libopencore-amrnb.a */,
+				D3EF21BA197E1395001BB86F /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D3EF21C1197E39EB001BB86F /* other */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA4392197CE4D300F55405 /* UIView+Utils.h */,
+				D3DA4393197CE4D300F55405 /* UIView+Utils.m */,
+				D3DA4379197CE46300F55405 /* HPGrowingTextView.h */,
+				D3DA437A197CE46300F55405 /* HPGrowingTextView.m */,
+				D3DA437B197CE46300F55405 /* HPTextViewInternal.h */,
+				D3DA437C197CE46300F55405 /* HPTextViewInternal.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3DA4329197CE34100F55405 /* InputView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DA435C197CE34100F55405 /* Build configuration list for PBXNativeTarget "InputView" */;
+			buildPhases = (
+				D3DA4326197CE34100F55405 /* Sources */,
+				D3DA4327197CE34100F55405 /* Frameworks */,
+				D3DA4328197CE34100F55405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputView;
+			productName = InputView;
+			productReference = D3DA432A197CE34100F55405 /* InputView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3DA434A197CE34100F55405 /* InputViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DA435F197CE34100F55405 /* Build configuration list for PBXNativeTarget "InputViewTests" */;
+			buildPhases = (
+				D3DA4347197CE34100F55405 /* Sources */,
+				D3DA4348197CE34100F55405 /* Frameworks */,
+				D3DA4349197CE34100F55405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3DA4351197CE34100F55405 /* PBXTargetDependency */,
+			);
+			name = InputViewTests;
+			productName = InputViewTests;
+			productReference = D3DA434B197CE34100F55405 /* InputViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3DA4322197CE34000F55405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com.wy;
+				TargetAttributes = {
+					D3DA434A197CE34100F55405 = {
+						TestTargetID = D3DA4329197CE34100F55405;
+					};
+				};
+			};
+			buildConfigurationList = D3DA4325197CE34000F55405 /* Build configuration list for PBXProject "InputView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3DA4321197CE34000F55405;
+			productRefGroup = D3DA432B197CE34100F55405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3DA4329197CE34100F55405 /* InputView */,
+				D3DA434A197CE34100F55405 /* InputViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3DA4328197CE34100F55405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DA4371197CE37D00F55405 /* MessageEntryInputField@2x.png in Resources */,
+				D3DA4374197CE37D00F55405 /* MessageEntrySendButtonPressed.png in Resources */,
+				D3DA436F197CE37D00F55405 /* MessageEntryBackground@2x.png in Resources */,
+				D3DA4372197CE37D00F55405 /* MessageEntrySendButton.png in Resources */,
+				D3DA4373197CE37D00F55405 /* MessageEntrySendButton@2x.png in Resources */,
+				D3DA436E197CE37D00F55405 /* MessageEntryBackground.png in Resources */,
+				D3DA4346197CE34100F55405 /* Images.xcassets in Resources */,
+				D3DA4338197CE34100F55405 /* InfoPlist.strings in Resources */,
+				D3DA4375197CE37D00F55405 /* MessageEntrySendButtonPressed@2x.png in Resources */,
+				D3DA4370197CE37D00F55405 /* MessageEntryInputField.png in Resources */,
+				D3DA4341197CE34100F55405 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DA4349197CE34100F55405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DA4357197CE34100F55405 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3DA4326197CE34100F55405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DA433E197CE34100F55405 /* WYAppDelegate.m in Sources */,
+				D3DA433A197CE34100F55405 /* main.m in Sources */,
+				D3EF21C0197E1395001BB86F /* WYRecorder.m in Sources */,
+				D3DA4364197CE35100F55405 /* ZKCommentInputView.m in Sources */,
+				D3DA437D197CE46300F55405 /* HPGrowingTextView.m in Sources */,
+				D3DA4344197CE34100F55405 /* WYViewController.m in Sources */,
+				D3DA4378197CE3AF00F55405 /* UIViewController+KeyboardAnimation.m in Sources */,
+				D3DA437E197CE46300F55405 /* HPTextViewInternal.m in Sources */,
+				D3DA4394197CE4D300F55405 /* UIView+Utils.m in Sources */,
+				D3EF21BD197E1395001BB86F /* amrFileCodec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DA4347197CE34100F55405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DA4359197CE34100F55405 /* InputViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3DA4351197CE34100F55405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3DA4329197CE34100F55405 /* InputView */;
+			targetProxy = D3DA4350197CE34100F55405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3DA4336197CE34100F55405 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DA4337197CE34100F55405 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3DA433F197CE34100F55405 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DA4340197CE34100F55405 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3DA4355197CE34100F55405 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DA4356197CE34100F55405 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3DA435A197CE34100F55405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3DA435B197CE34100F55405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3DA435D197CE34100F55405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InputView/InputView-Prefix.pch";
+				INFOPLIST_FILE = "InputView/InputView-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InputView/arm/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3DA435E197CE34100F55405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InputView/InputView-Prefix.pch";
+				INFOPLIST_FILE = "InputView/InputView-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InputView/arm/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3DA4360197CE34100F55405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InputView.app/InputView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InputView/InputView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InputViewTests/InputViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D3DA4361197CE34100F55405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InputView.app/InputView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InputView/InputView-Prefix.pch";
+				INFOPLIST_FILE = "InputViewTests/InputViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3DA4325197CE34000F55405 /* Build configuration list for PBXProject "InputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DA435A197CE34100F55405 /* Debug */,
+				D3DA435B197CE34100F55405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DA435C197CE34100F55405 /* Build configuration list for PBXNativeTarget "InputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DA435D197CE34100F55405 /* Debug */,
+				D3DA435E197CE34100F55405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DA435F197CE34100F55405 /* Build configuration list for PBXNativeTarget "InputViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DA4360197CE34100F55405 /* Debug */,
+				D3DA4361197CE34100F55405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3DA4322197CE34000F55405 /* Project object */;
+}
